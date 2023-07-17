@@ -6,6 +6,14 @@ $color-green: #008766;
 $color-light-blue: #89C8FA;
 $color-dark-blue: #003A68;
 $color-purple: #9356DC;
+$color-pink: #FF79DA;
+$bg-color-light-grey: #F6F6F6;
+
+// MIXIN   
+
+@mixin buttonGradient($color1, $color2) {
+    background-image: linear-gradient(to bottom, $color1 , $color2);
+}
 
 // fonts 
 
@@ -15,6 +23,9 @@ $color-purple: #9356DC;
 
 * {
     font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
 }
 
 .logo, .title {
@@ -22,3 +33,12 @@ $color-purple: #9356DC;
 }
 
 // HOME PAGE
+
+// :nth-child(odd) = un element sur deux en commençant par 1.
+section:nth-child(odd){
+    background-color: $bg-color-light-grey;
+}
+.linearGradientPurplePink {
+    color: $color-white;
+    @include buttonGradient($color-pink, $color-purple );
+}

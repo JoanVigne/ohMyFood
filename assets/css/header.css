@@ -2,12 +2,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
 .logo, .title {
   font-family: "Shrikhand", cursive;
 }
 
+section:nth-child(odd) {
+  background-color: #F6F6F6;
+}
+
+.linearGradientPurplePink {
+  color: white;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+}
+
 header {
-  background-color: #89C8FA;
+  text-align: center;
+}
+header .logo {
+  box-shadow: 0 1px 5px rgb(97, 97, 97);
+}
+header .localisation {
+  background-color: #EAEAEA;
 }
