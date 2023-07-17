@@ -1,0 +1,23 @@
+// COULEURS VAR
+
+$color-white : white;
+$color-validated : #99E2D0;
+$color-green: #008766;
+$color-light-blue: #89C8FA;
+$color-dark-blue: #003A68;
+$color-purple: #9356DC;
+
+// fonts 
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo, .title {
+    font-family: 'Shrikhand', cursive;
+}
+
