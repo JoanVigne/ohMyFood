@@ -21,6 +21,11 @@ $bg-color-light-grey: #F6F6F6;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+// global style
+
+html {
+    scroll-behavior: smooth;
+}
 
 // global class
 
