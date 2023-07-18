@@ -1,29 +1,123 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-html {
-  scroll-behavior: smooth;
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .text-align {
   text-align: center;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-}
-
 .logo, .title {
   font-family: "Shrikhand", cursive;
+}
+
+.displayNone {
+  display: none;
+}
+
+.empty-heart {
+  background-image: url("../assets/logos/emptyHeart.png");
 }
 
 section:nth-child(odd) {
   background-color: #F6F6F6;
 }
 
-.linearGradientPurplePink {
+section h2 {
+  font-weight: 900;
+}
+
+section h4 {
+  font-weight: 300;
+  font-size: large;
+}
+
+.explorer h2 {
+  padding: 40px 50px 15px;
+}
+.explorer p {
+  font-weight: 300;
+  font-size: larger;
+  padding: 0 20px;
+}
+.explorer button {
   color: white;
+  font-weight: 400;
+  font-size: large;
+  margin: 30px 0 58px;
+  padding: 15px;
+  border: none;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  border-radius: 25px;
+}
+
+.fonctionnement {
+  padding-bottom: 60px;
+}
+.fonctionnement h2 {
+  margin: 50px 0 30px 20px;
+}
+.fonctionnement .numero {
+  position: relative;
+  right: 15px;
+  font-weight: 400;
+  background-color: #9356DC;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 25px;
+}
+.fonctionnement .stepCard {
+  display: flex;
+  align-items: center;
+  margin: 25px 20px;
+  padding: 13px 0;
+  border-radius: 20px;
+  filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.2));
+  background-color: #F6F6F6;
+}
+.fonctionnement .stepCard i {
+  padding: 15px;
+}
+
+.restaurants {
+  padding: 40px 0;
+}
+.restaurants h2 {
+  padding: 20px 0 5px 20px;
+}
+.restaurants .card {
+  margin: 20px;
+  padding-bottom: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+.restaurants .card .photo {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.restaurants .card .bottomCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 15px;
+}
+.restaurants .card .bottomCard .nouveau {
+  font-weight: 500;
+  font-size: 15px;
+  padding: 5px 12px;
+  color: #008766;
+  background-color: #99E2D0;
+  position: relative;
+  bottom: 180px;
+  left: 50px;
+  border-radius: 2px;
+}
+.restaurants .card .bottomCard .purpleRadient {
+  font-size: x-large;
+  color: #fe79da;
 }

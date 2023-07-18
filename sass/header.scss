@@ -2,10 +2,14 @@
 
 header {
      .logo {
-
-        box-shadow: 0 1px 5px rgb(97, 97, 97);
+        font-weight: 400;
+        padding: 9px;
+        box-shadow: 0 3px 10px rgb(168 165 165);
+        margin-bottom: 4px;
     }
     .localisation {
-background-color: #EAEAEA;
+        background-color: #EAEAEA;  
+        padding: 15px;
+        font-weight: 500;
     }
 }

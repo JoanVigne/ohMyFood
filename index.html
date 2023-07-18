@@ -11,102 +11,144 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/restaurants.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
   </head>
+
   <body>
     <header class="text-align">
-      <h1 class="logo">Oh my food</h1>
+      <h1 class="logo">ohmyfood</h1>
+
       <div class="localisation">
         <i class="fa-sharp fa-solid fa-location-dot"></i>
         <span>Paris, Belleville</span>
       </div>
     </header>
     <main>
-      <section class="text-align">
+      <section class="explorer text-align">
         <h2>Réserver le menu qui vous convient</h2>
         <p>
           Découvrez des restaurants d’exception, sélectionnés par nos soins.
         </p>
-        <button class="linearGradientPurplePink">
-          Explorer nos restaurants
-        </button>
+        <button>Explorer nos restaurants</button>
       </section>
-      <section>
+      <section class="fonctionnement">
         <h2>Fonctionnement</h2>
         <div class="stepCard">
-          1+ <i class="fa-solid fa-mobile-screen-button"></i>
+          <div class="numero">1</div>
+          <i
+            class="fa-solid fa-mobile-screen-button"
+            style="color: #7e7e7e"
+          ></i>
           <h3>Choisissez un restaurant</h3>
         </div>
         <div class="stepCard">
-          2+ <i class="fa-solid fa-list-ul"></i>
+          <div class="numero">2</div>
+          <i class="fa-solid fa-list-ul" style="color: #7e7e7e"></i>
           <h3>Composez votre menu</h3>
         </div>
         <div class="stepCard">
-          <i class="fa-solid fa-store"></i> logo
+          <div class="numero">3</div>
+          <i class="fa-solid fa-store" style="color: #9356dc"></i>
           <h3>Dégustez au restaurant</h3>
         </div>
       </section>
-      <section>
+      <section class="restaurants">
         <h2>Restaurants</h2>
+
         <div class="card">
-          <img src="" alt="assiette gastronimique" />
-          <div class="nouveau">Nouveau</div>
-          <div class="nomEtLike">
-            <h3 class="nomRestaurant">La palette du goût</h3>
-            <i class="fa-thin fa-heart"></i>
+          <img
+            class="photo"
+            src="./assets/img/phone/laPaletteDuGout.png"
+            alt="assiette gastronimique"
+          />
+          <div class="bottomCard">
+            <div class="nomEtLocalisation">
+              <h3 class="nomRestaurant">La palette du goût</h3>
+              <h4 class="localisationRestaurant">Ménilmontant</h4>
+            </div>
+            <div class="nouveau">Nouveau</div>
+            <img src="./assets/logos/emptyHeart.png" alt="coeur" />
           </div>
-          <h4 class="localisationRestaurant">Ménilmontant</h4>
         </div>
+
         <div class="card">
-          <img src="" alt="assiette gastronimique" />
-          <div class="nouveau">Nouveau</div>
-          <div class="nomEtLike">
-            <h3 class="nomRestaurant">La note enchantée</h3>
-            <i class="fa-solid fa-heart"></i>
+          <img
+            class="photo"
+            src="./assets/img/phone/laNoteEnchantee.png"
+            alt="assiette gastronimique"
+          />
+          <div class="bottomCard">
+            <div class="nomEtLocalisation">
+              <h3 class="nomRestaurant">La note enchantée</h3>
+              <h4 class="localisationRestaurant">Charonne</h4>
+            </div>
+            <div class="nouveau">Nouveau</div>
+            <i class="purpleRadient fa-solid fa-heart"></i>
           </div>
-          <h4 class="localisationRestaurant">Charonne</h4>
         </div>
+
         <div class="card">
-          <img src="" alt="assiette gastronimique" />
-          <div class="nouveau invisible">Nouveau a rendre invisible</div>
-          <div class="nomEtLike">
-            <h3 class="nomRestaurant">À la française</h3>
-            <i class="fa-thin fa-heart"></i>
+          <img
+            class="photo"
+            src="./assets/img/phone/aLaFrancaise.png"
+            alt="assiette gastronimique"
+          />
+          <div class="bottomCard">
+            <div class="nomEtLocalisation">
+              <h3 class="nomRestaurant">À la française</h3>
+              <h4 class="localisationRestaurant">Cité rouge</h4>
+            </div>
+            <!--       <div class="nouveau">Nouveau</div> -->
+            <img src="./assets/logos/emptyHeart.png" alt="coeur" />
           </div>
-          <h4 class="localisationRestaurant">Cité rouge</h4>
         </div>
+
         <div class="card">
-          <img src="" alt="assiette gastronimique" />
-          <div class="nouveau invisible">Nouveau a rendre invisible</div>
-          <div class="nomEtLike">
-            <h3 class="nomRestaurant">Le délice des sens</h3>
-            <i class="fa-thin fa-heart"></i>
+          <img
+            class="photo"
+            src="./assets/img/phone/lesDelicesDesSens.png"
+            alt="assiette gastronimique"
+          />
+          <div class="bottomCard">
+            <div class="nomEtLocalisation">
+              <h3 class="nomRestaurant">Le délice des sens</h3>
+              <h4 class="localisationRestaurant">Folie-Méricourt</h4>
+            </div>
+            <!--             <div class="nouveau">Nouveau</div> -->
+            <img src="./assets/logos/emptyHeart.png" alt="coeur" />
           </div>
-          <h4 class="localisationRestaurant">Folie-Méricourt</h4>
         </div>
       </section>
     </main>
     <footer>
       <h3 class="logo">ohmyfood</h3>
-      <ul>
-        <li>
-          <a href=""
-            ><i class="fa-solid fa-utensils" style="color: #ffffff"></i>
-            Porposer un restaurant</a
-          >
-        </li>
-        <li>
-          <a href=""
-            ><i class="fa-solid fa-handshake-angle" style="color: #ffffff"></i>
-            Devenir partenaire</a
-          >
-        </li>
-        <li><a href="">Mention légales</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-utensils" style="color: #ffffff"></i>
+              Porposer un restaurant</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i
+                class="fa-solid fa-handshake-angle"
+                style="color: #ffffff"
+              ></i>
+              Devenir partenaire</a
+            >
+          </li>
+          <li><a href="">Mention légales</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
