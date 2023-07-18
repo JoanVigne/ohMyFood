@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+.text-align {
+  text-align: center;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -20,9 +24,6 @@ section:nth-child(odd) {
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
 }
 
-header {
-  text-align: center;
-}
 header .logo {
   box-shadow: 0 1px 5px rgb(97, 97, 97);
 }
