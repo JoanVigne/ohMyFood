@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page d'accueil ohmyfood</title>
+    <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -11,13 +12,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/accueil.css" />
     <link rel="stylesheet" href="./assets/css/restaurants.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
   </head>
 
   <body>
@@ -30,13 +34,17 @@
       </div>
     </header>
     <main>
+      <!-- section 1 decouvrez -->
       <section class="explorer text-align">
         <h2>Réserver le menu qui vous convient</h2>
         <p>
           Découvrez des restaurants d’exception, sélectionnés par nos soins.
         </p>
-        <button>Explorer nos restaurants</button>
+        <button class="bigBtn">
+          <a href="#restaurant">Explorer nos restaurants</a>
+        </button>
       </section>
+      <!-- section 2 fonctionnement -->
       <section class="fonctionnement">
         <h2>Fonctionnement</h2>
         <div class="stepCard">
@@ -58,22 +66,28 @@
           <h3>Dégustez au restaurant</h3>
         </div>
       </section>
-      <section class="restaurants">
+      <!-- section 3 restaurants -->
+      <section class="restaurants" id="restaurant">
         <h2>Restaurants</h2>
 
         <div class="card">
-          <img
-            class="photo"
-            src="./assets/img/phone/laPaletteDuGout.png"
-            alt="assiette gastronimique"
-          />
+          <a href="./restaurants/laPaletteDuGout.html">
+            <img
+              class="photo"
+              src="./assets/img/phone/laPaletteDuGout.png"
+              alt="assiette gastronimique"
+            />
+          </a>
           <div class="bottomCard">
-            <div class="nomEtLocalisation">
+            <a
+              class="nomEtLocalisation"
+              href="./restaurants/laPaletteDuGout.html"
+            >
               <h3 class="nomRestaurant">La palette du goût</h3>
               <h4 class="localisationRestaurant">Ménilmontant</h4>
-            </div>
+            </a>
             <div class="nouveau">Nouveau</div>
-            <img src="./assets/logos/emptyHeart.png" alt="coeur" />
+            <i class="fa-regular fa-heart"></i>
           </div>
         </div>
 
@@ -104,8 +118,8 @@
               <h3 class="nomRestaurant">À la française</h3>
               <h4 class="localisationRestaurant">Cité rouge</h4>
             </div>
-            <!--       <div class="nouveau">Nouveau</div> -->
-            <img src="./assets/logos/emptyHeart.png" alt="coeur" />
+            <!-- <div class="nouveau">Nouveau</div> -->
+            <i class="fa-regular fa-heart"></i>
           </div>
         </div>
 
@@ -120,12 +134,13 @@
               <h3 class="nomRestaurant">Le délice des sens</h3>
               <h4 class="localisationRestaurant">Folie-Méricourt</h4>
             </div>
-            <!--             <div class="nouveau">Nouveau</div> -->
-            <img src="./assets/logos/emptyHeart.png" alt="coeur" />
+            <!-- <div class="nouveau">Nouveau</div> -->
+            <i class="fa-regular fa-heart"></i>
           </div>
         </div>
       </section>
     </main>
+    <!--     FOOTER -->
     <footer>
       <h3 class="logo">ohmyfood</h3>
       <nav>
@@ -146,7 +161,7 @@
             >
           </li>
           <li><a href="">Mention légales</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="mailto:ohmyfood@gmail.com">Contact</a></li>
         </ul>
       </nav>
     </footer>
