@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../assets/fonts/Shrikhand/Shrikhand-Regular.ttf");
+}
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -24,10 +26,9 @@ a {
   display: none;
 }
 
-.empty-heart {
-  background-image: url("../assets/logos/emptyHeart.png");
-}
-
+/* .empty-heart {
+    background-image: url("../assets/logos/emptyHeart.png");
+} */
 .bigBtn {
   min-width: 200px;
   color: white;
@@ -51,6 +52,7 @@ a {
 }
 
 .fa-heart {
+  /* animations */
   transition: all 450ms;
 }
 .fa-heart:hover {

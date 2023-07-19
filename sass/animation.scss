@@ -4,15 +4,3 @@
 
 
 
-// logo COEUR
-
-.fa-heart {
-    transition: all 450ms;
-    &:hover {
-        transform: scale(1.2);
-       color: red;
-    }
-    &:active {
-        background-color: $color-pink;
-    }
-}
