@@ -3,7 +3,6 @@
 
 
 
-
 .loader {
     position: absolute;
     top: 35%;
@@ -14,13 +13,12 @@
     opacity: 0;
     background-color:rgba($color: white, $alpha: 0.1);
 
-    border-top: .3em solid $color-purple;
+    border-top: .3em solid $color-validated;
 	border-right: .3em solid transparent;
 	animation: loader 1s linear infinite;
     animation-iteration-count: 3; /* pour qu'il s'arrete au bout de 3 tours */
 	border-radius: 100%;
 }
-
 @keyframes loader {
 /*  
 version codepen :

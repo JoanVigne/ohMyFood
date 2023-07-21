@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "Shrikhand";
-  src: url("../assets/fonts/Shrikhand/Shrikhand-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -61,4 +58,121 @@ a {
 }
 .fa-heart:active {
   background-color: #FF79DA;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+header i {
+  font-size: x-large;
+  padding: 20px;
+}
+header .logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -90px;
+  width: 180px;
+}
+
+.photoResto {
+  width: 100%;
+  z-index: -1;
+}
+
+.menu {
+  z-index: 1;
+  background-color: #F6F6F6;
+  position: relative;
+  top: -40px;
+  border-radius: 40px 40px 0 0;
+  padding: 10px;
+}
+.menu .nomEtCoeur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 15px;
+}
+.menu .nomEtCoeur .title {
+  font-size: 28px;
+  font-weight: unset;
+}
+.menu .nomEtCoeur i {
+  font-size: 30px;
+  padding-right: 10px;
+}
+.menu .containerMenus h3 {
+  font-weight: 400;
+}
+.menu .containerMenus .underline {
+  border: 2px solid #99E2D0;
+  width: 50px;
+}
+.menu .containerMenus .containerDish {
+  display: flex;
+  flex-direction: column;
+}
+.menu .containerMenus .containerDish .card {
+  background-color: white;
+  max-width: 500px;
+  border-radius: 15px;
+  filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.2));
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu .containerMenus .containerDish .card .description {
+  padding: 12px;
+  width: 50%;
+}
+.menu .containerMenus .containerDish .card .description h4, .menu .containerMenus .containerDish .card .description p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+.menu .containerMenus .containerDish .card .description h4 {
+  padding: 3px 0;
+  font-size: 18px;
+}
+.menu .containerMenus .containerDish .card .container {
+  display: flex;
+  align-items: flex-end;
+}
+.menu .containerMenus .containerDish .card .container .prix {
+  font-weight: bold;
+  margin: 10px;
+}
+.menu .containerMenus .containerDish .card .container .chosen {
+  display: flex;
+  color: white;
+  background-color: #99E2D0;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+  width: 0;
+  visibility: hidden;
+  transition: all 1s;
+}
+.menu .containerMenus .containerDish .card .container .chosen i {
+  margin: auto;
+  font-size: 0;
+  transition: all 1s;
+}
+.menu .containerMenus .containerDish .card .container .chosen:active, .menu .containerMenus .containerDish .card .container .chosen:hover {
+  visibility: hidden;
+  width: 0;
+  transition: all 1s;
+}
+.menu .containerMenus .containerDish .card .container .chosen:active i, .menu .containerMenus .containerDish .card .container .chosen:hover i {
+  font-size: 0;
+}
+.menu .containerMenus .containerDish .card:hover .chosen {
+  visibility: visible;
+  width: 65px;
+}
+.menu .containerMenus .containerDish .card:hover .chosen i {
+  margin: auto;
+  font-size: 20px;
 }

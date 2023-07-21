@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "Shrikhand";
-  src: url("../assets/fonts/Shrikhand/Shrikhand-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;

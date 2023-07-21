@@ -12,6 +12,7 @@ $bg-color-light-grey: #F6F6F6;
 
 // MIXIN   
 
+
 @mixin buttonGradient($color1, $color2) {
     background-image: linear-gradient(to bottom, $color1 , $color2);
 }
@@ -25,11 +26,8 @@ $bg-color-light-grey: #F6F6F6;
 }
 
 // global style
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-@font-face {
-    font-family: 'Shrikhand';
-    src: url('../assets/fonts/Shrikhand/Shrikhand-Regular.ttf');
-}
 
 * {
     font-family: 'Roboto', sans-serif;

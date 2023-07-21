@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "Shrikhand";
-  src: url("../assets/fonts/Shrikhand/Shrikhand-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -74,6 +71,18 @@ section h2 {
 section h4 {
   font-weight: 300;
   font-size: large;
+}
+
+header .logo {
+  font-weight: 400;
+  padding: 9px;
+  box-shadow: 0 3px 10px rgb(168, 165, 165);
+  margin-bottom: 4px;
+}
+header .localisation {
+  background-color: #EAEAEA;
+  padding: 15px;
+  font-weight: 500;
 }
 
 .explorer h2 {

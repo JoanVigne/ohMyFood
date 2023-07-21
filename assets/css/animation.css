@@ -1,8 +1,5 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Shrikhand";
-  src: url("../assets/fonts/Shrikhand/Shrikhand-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -73,7 +70,7 @@ a {
   height: 4em;
   opacity: 0;
   background-color: rgba(255, 255, 255, 0.1);
-  border-top: 0.3em solid #9356DC;
+  border-top: 0.3em solid #99E2D0;
   border-right: 0.3em solid transparent;
   animation: loader 1s linear infinite;
   animation-iteration-count: 3; /* pour qu'il s'arrete au bout de 3 tours */
