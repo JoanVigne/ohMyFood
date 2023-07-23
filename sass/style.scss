@@ -8,6 +8,7 @@ $color-dark-blue: #003A68;
 $color-purple: #9356DC;
 $color-pink: #FF79DA;
 $bg-color-light-grey: #F6F6F6;
+$min-width-btn: 200px;
 
 
 // MIXIN   
@@ -41,6 +42,9 @@ a {
     color: black;
 }
 
+i {
+    font-size: 30px;
+}
 
 // global class
 
@@ -61,7 +65,7 @@ a {
 } */
 
 .bigBtn {
-    min-width: 200px;
+    min-width: $min-width-btn;
     color: $color-white;
     font-weight: 400;
     font-size: large;
@@ -86,15 +90,6 @@ a {
 
     // logo COEUR
 
-.fa-heart {
-     /* animations */
-    transition: all 450ms;
-    &:hover {
-        transform: scale(1.2);
-       color: red;
-    }
-    &:active {
-        background-color: $color-pink;
-    }
-}
+/* .fa-solid {
 
+} */

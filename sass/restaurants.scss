@@ -1,6 +1,10 @@
 @import 'style.scss';
 
-
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 header {
     display: flex;
     align-items: center;
@@ -20,7 +24,9 @@ header {
 
 .photoResto {
     width: 100%;
-    z-index: -1;
+/*     z-index: -1; */
+    max-height: 400px;
+    object-fit: cover;
 }
 
 .menu {
@@ -40,15 +46,15 @@ header {
         padding: 35px 15px;
         .title {
             font-size: 28px;
-            font-weight: unset;
-           
+            font-weight: unset;    
         }
-        i {
-            font-size: 30px;
-            padding-right: 10px;
+        .fa-regular {
+            padding-left: 25px;
         }
+
     }
     .containerMenus {
+        margin-bottom: 50px;
         h3 {
             font-weight: 400;
         }
@@ -60,9 +66,10 @@ header {
         .containerDish {
             display: flex;
             flex-direction: column;
+     /*        align-items: center; */
             .card {
                 background-color: $color-white;
-                max-width: 500px;
+                max-width: 600px;
                 @include radius(15px);
                 @include boxShadow;
                 margin-top: 15px ;
@@ -71,7 +78,8 @@ header {
                 
                     .description {
                         padding: 12px;
-                        width: 50%;
+                        flex: 1;
+                        max-width: 65%;
                         h4, p {
                         text-overflow: ellipsis;
                         white-space: nowrap;
@@ -116,8 +124,10 @@ header {
                                   }
                             }
                 }
+
+
             // quand chosen invisible, onclick sur phone, et hover en desktop     
-            &:hover .chosen {
+            &:hover .chosen{
                 visibility: visible;
                 width: 65px;
                 i {
@@ -127,19 +137,30 @@ header {
             }  
             }
         }
-        
+    }
+    .bigBtn {
+        margin-left: calc(50% - $min-width-btn/2);
     }
 }
 
+footer {
+    position: relative;
+    top: -40px;
+}
 
 @media (min-width: 768px) {
     .menu {
+        margin: 0 10%;
+        .nomEtCoeur {
+            justify-content: center;
+
+        }
         .containerMenus {
-            .card {
-            
-                
+            margin: 0 20% 40px 20%;
+            .containerDish {
+               display: flex;
+                flex-direction: column;               
             }
-            
         }
     }
 

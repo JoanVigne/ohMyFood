@@ -11,6 +11,10 @@ a {
   color: black;
 }
 
+i {
+  font-size: 30px;
+}
+
 .text-align {
   text-align: center;
 }
@@ -48,14 +52,6 @@ a {
   filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.5));
 }
 
-.fa-heart {
-  /* animations */
-  transition: all 450ms;
-}
-.fa-heart:hover {
-  transform: scale(1.2);
-  color: red;
-}
-.fa-heart:active {
-  background-color: #FF79DA;
-}
+/* .fa-solid {
+
+} */

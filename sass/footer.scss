@@ -12,13 +12,41 @@ footer {
 
     }
     li {
-        margin: 10px;
+         margin: 10px; 
     }
     a {
         color: white;
         i {
-            width: 20px;
+           font-size: 15px;
+           padding-right: 10px;
         }
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    footer {
+        padding-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+        h3 {
+            margin: 10px;
+        }
+        nav {
+            padding: 0;
+            ul {
+                display: flex;
+                align-items: center;
+                li:nth-child(even) {
+                   margin-right: 40px;
+                }
+                
+            }
+        }
+
     }
 
 }

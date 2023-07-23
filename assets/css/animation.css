@@ -12,6 +12,10 @@ a {
   color: black;
 }
 
+i {
+  font-size: 30px;
+}
+
 .text-align {
   text-align: center;
 }
@@ -49,18 +53,9 @@ a {
   filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.5));
 }
 
-.fa-heart {
-  /* animations */
-  transition: all 450ms;
-}
-.fa-heart:hover {
-  transform: scale(1.2);
-  color: red;
-}
-.fa-heart:active {
-  background-color: #FF79DA;
-}
+/* .fa-solid {
 
+} */
 .loader {
   position: absolute;
   top: 35%;
@@ -103,4 +98,29 @@ a {
     transform: rotate(360deg);
     opacity: 0.3;
   }
+}
+.full-heart {
+  color: white;
+  position: relative;
+  left: -34px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.fa-regular {
+  transition: all 1s;
+}
+
+.hearts:hover .full-heart {
+  opacity: 1;
+  /*     background: -moz-linear-gradient(top, $color-purple 0%, $color-pink 100%);
+      background: -webkit-linear-gradient(top, $color-purple 0%, $color-pink 100%); */
+  background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hearts:hover .fa-regular {
+  opacity: 0;
 }

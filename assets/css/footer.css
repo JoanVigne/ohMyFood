@@ -11,6 +11,10 @@ a {
   color: black;
 }
 
+i {
+  font-size: 30px;
+}
+
 .text-align {
   text-align: center;
 }
@@ -48,18 +52,9 @@ a {
   filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.5));
 }
 
-.fa-heart {
-  /* animations */
-  transition: all 450ms;
-}
-.fa-heart:hover {
-  transform: scale(1.2);
-  color: red;
-}
-.fa-heart:active {
-  background-color: #FF79DA;
-}
+/* .fa-solid {
 
+} */
 footer {
   background-color: hsl(0, 0%, 21%);
   color: white;
@@ -78,5 +73,29 @@ footer a {
   color: white;
 }
 footer a i {
-  width: 20px;
+  font-size: 15px;
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+  footer h3 {
+    margin: 10px;
+  }
+  footer nav {
+    padding: 0;
+  }
+  footer nav ul {
+    display: flex;
+    align-items: center;
+  }
+  footer nav ul li:nth-child(even) {
+    margin-right: 40px;
+  }
 }

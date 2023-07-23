@@ -1,6 +1,7 @@
 @import 'style.scss';
 
 
+// faire des mixins pour les importer partout
 
 
 .loader {
@@ -45,5 +46,34 @@ version codepen :
         transform: rotate(360deg);
         opacity: 0.3;
     } 
+}
+
+// HEART QUI SE REMPLIT
+
+.full-heart {
+    color: white;
+    position: relative;
+    left: -34px;
+    opacity: 0;
+    transition: all 1s;
+}
+.fa-regular {
+    transition: all 1s;
+}
+.hearts:hover {
+    .full-heart {
+        opacity: 1;
+        // Pour que la couleur de l'icon soit en linear-gradient:
+    /*     background: -moz-linear-gradient(top, $color-purple 0%, $color-pink 100%);
+        background: -webkit-linear-gradient(top, $color-purple 0%, $color-pink 100%); */
+        background: linear-gradient(to bottom, $color-purple 0%, $color-pink 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .fa-regular {
+       opacity: 0;
+    }
 }
 

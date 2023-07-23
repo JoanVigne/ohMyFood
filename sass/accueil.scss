@@ -115,11 +115,6 @@ header {
                 left: 60px;
                 @include radius(2px);
             }
-            .purpleRadient {
-                font-size: x-large;
-                // TO CHANGE INTO GRADIENT !!!!!!!!!!!!!!!!!!!!!!
-                /*  color: mix($color-purple, $color-pink, $weight: 0.8);  */
-            }
         }
 
 
@@ -163,14 +158,13 @@ header {
 @media only screen and (min-width: 1024px) {
 
 .fonctionnement {
+    margin-left: 6%;
     .cardContainer {
         justify-content: center;
         .stepCard {
-  
-            min-width: 280px;
+        min-width: 280px;
         padding-right: 40px;
         margin: 15px;
-       
         }
     }
 }
