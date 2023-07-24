@@ -41,11 +41,9 @@ i {
   filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.2));
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   border-radius: 25px;
+  color: white;
   /* animations */
   transition: all 550ms;
-}
-.bigBtn a {
-  color: white;
 }
 .bigBtn:hover {
   opacity: 0.8;
@@ -70,8 +68,8 @@ section h4 {
 
 header .logo {
   font-weight: 400;
-  padding: 9px;
-  box-shadow: 0 3px 10px rgb(168, 165, 165);
+  padding: 15px;
+  box-shadow: 0 2px 10px rgb(168, 165, 165);
   margin-bottom: 4px;
 }
 header .localisation {
@@ -80,6 +78,10 @@ header .localisation {
   font-weight: 500;
 }
 
+.explorer {
+  display: flex;
+  flex-direction: column;
+}
 .explorer h2 {
   padding: 40px 50px 15px;
 }
@@ -87,6 +89,9 @@ header .localisation {
   font-weight: 300;
   font-size: larger;
   padding: 0 20px;
+}
+.explorer .bigBtn {
+  margin: 40px auto 60px;
 }
 
 .fonctionnement {
@@ -101,13 +106,18 @@ header .localisation {
   padding: 2px 8px;
   border-radius: 25px;
 }
+.fonctionnement .cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 .fonctionnement .cardContainer .stepCard {
   display: flex;
   align-items: center;
   width: 85%;
   max-width: 400px;
-  height: 3em;
-  margin: 12px auto auto 21px;
+  margin-top: 32px;
   padding: 13px 0;
   border-radius: 20px;
   filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.2));
@@ -167,17 +177,6 @@ header .localisation {
   .explorer p {
     font-size: initial;
   }
-  .fonctionnement {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-  }
-  .fonctionnement .cardContainer {
-    display: flex;
-  }
-  .fonctionnement .stepCard {
-    width: auto;
-  }
   .restaurants {
     display: flex;
     flex-direction: column;
@@ -200,6 +199,7 @@ header .localisation {
   }
   .fonctionnement .cardContainer {
     width: 100%;
+    flex-direction: row;
   }
   .fonctionnement .cardContainer .stepCard {
     padding-right: 40px;

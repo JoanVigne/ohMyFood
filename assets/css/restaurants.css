@@ -41,11 +41,9 @@ i {
   filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.2));
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   border-radius: 25px;
+  color: white;
   /* animations */
   transition: all 550ms;
-}
-.bigBtn a {
-  color: white;
 }
 .bigBtn:hover {
   opacity: 0.8;
@@ -65,10 +63,11 @@ header {
   display: flex;
   align-items: center;
   font-weight: 400;
+  padding: 33px 0;
 }
-header i {
-  font-size: x-large;
-  padding: 20px;
+header .fa-arrow-left {
+  font-size: large;
+  padding-left: 15px;
 }
 header .logo {
   position: absolute;
@@ -80,7 +79,7 @@ header .logo {
 .photoResto {
   width: 100%;
   /*     z-index: -1; */
-  max-height: 400px;
+  max-height: 330px;
   object-fit: cover;
 }
 
@@ -109,7 +108,7 @@ header .logo {
   margin-bottom: 50px;
 }
 .menu .containerMenus h3 {
-  font-weight: 400;
+  font-weight: 300;
 }
 .menu .containerMenus .underline {
   border: 2px solid #99E2D0;
@@ -142,7 +141,7 @@ header .logo {
 }
 .menu .containerMenus .containerDish .card .description h4 {
   padding: 3px 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 .menu .containerMenus .containerDish .card .description .detailPrix {
   display: flex;
@@ -204,6 +203,6 @@ footer {
 }
 @media only screen and (min-width: 1024px) {
   .menu {
-    margin: 0 10%;
+    margin: 0 13%;
   }
 }

@@ -17,8 +17,8 @@ section h4 {
 header {
     .logo {
        font-weight: 400;
-       padding: 9px;
-       box-shadow: 0 3px 10px rgb(168 165 165);
+       padding: 15px;
+       box-shadow: 0 2px 10px rgb(168 165 165);
        margin-bottom: 4px;
    }
    .localisation {
@@ -30,7 +30,8 @@ header {
 
 //section 1 :
 .explorer {
-
+    display: flex;
+    flex-direction: column;
     h2 {
         padding: 40px 50px 15px;
     }
@@ -38,10 +39,10 @@ header {
         font-weight: 300;
         font-size: larger;
         padding: 0 20px;
+    }  
+    .bigBtn {
+        margin: 40px auto 60px;
     }
-
-
-       
 }
 //section 2 :
 .fonctionnement {
@@ -58,14 +59,17 @@ header {
         border-radius: 25px;
     }
     .cardContainer {
- 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
         .stepCard{
             display: flex;
             align-items: center;
             width: 85%;
             max-width: 400px;
-            height: 3em;
-            margin: 12px auto auto 21px;
+
+            margin-top: 32px;
             padding: 13px 0;
             @include radius(20px);
             @include boxShadow;
@@ -134,21 +138,9 @@ header {
 
 @media (min-width: 768px) {
 
-    .explorer {
-        
+    .explorer {   
         p {
             font-size: initial;
-        }
-    }
-    .fonctionnement {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        .cardContainer {
-            display: flex;
-        }
-        .stepCard {
-            width:auto;
         }
     }
     .restaurants {
@@ -171,9 +163,10 @@ header {
 @media only screen and (min-width: 1024px) {
 
 .fonctionnement {
-    margin-left: 6%;
+        margin-left: 6%;
     .cardContainer {
         width: 100%;
+        flex-direction: row;
         .stepCard {
         padding-right: 40px;
         margin: 15px;

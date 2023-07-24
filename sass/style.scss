@@ -75,9 +75,7 @@ i {
     @include boxShadow;
     @include buttonGradient($color-pink, $color-purple );
     @include radius(25px);
-       a {
         color: $color-white;
-       }
 
     /* animations */
     transition: all 550ms;

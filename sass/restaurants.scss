@@ -9,23 +9,24 @@ header {
   display: flex;
   align-items: center;
   font-weight: 400;
-
-  i {
-    font-size: x-large;
-    padding: 20px;
+  padding: 33px 0;
+  .fa-arrow-left {
+    font-size: large;
+    padding-left: 15px;
   }
   .logo {
     position: absolute;
     left: 50%;
     margin-left: -90px;
     width: 180px;
+
   }
 }
 
 .photoResto {
   width: 100%;
   /*     z-index: -1; */
-  max-height: 400px;
+  max-height: 330px;
   object-fit: cover;
 }
 
@@ -54,7 +55,7 @@ header {
   .containerMenus {
     margin-bottom: 50px;
     h3 {
-      font-weight: 400;
+      font-weight: 300;
     }
     .underline {
       border: 2px solid $color-validated;
@@ -87,7 +88,7 @@ header {
           }
           h4 {
             padding: 3px 0;
-            font-size: 18px;
+            font-size: 16px;
           }
           .detailPrix {
             display: flex;
@@ -161,6 +162,6 @@ footer {
 }
 @media only screen and (min-width: 1024px) {
     .menu {
-        margin: 0 10%;
+        margin: 0 13%;
     }
 }
