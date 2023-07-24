@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La palette du gout - ohmyfood</title>
+    <title>La palette du goût - ohmyfood</title>
+    <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -11,22 +12,213 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/restaurants.css" />
-    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/animation.css" />
+
     <link rel="stylesheet" href="../assets/css/footer.css" />
   </head>
   <body>
-    <header class="text-align">
-      <h1 class="logo">ohmyfood</h1>
+    <header>
+      <a href="../index.html"> <i class="fa-solid fa-arrow-left"></i></a>
 
-      <div class="localisation">
-        <i class="fa-sharp fa-solid fa-location-dot"></i>
-        <span>Paris, Belleville</span>
-      </div>
+      <img
+        class="logo"
+        src="../assets/logos/ohmyfood.png"
+        alt="logo ohmyfood"
+      />
     </header>
-    <i class="fa-solid fa-arrow-left"></i>
-    <img src="./assets/logos/emptyHeart.png" alt="coeur" />
-    <button class="bigBtn">Commander</button>
+    <main>
+      <img
+        class="photoResto"
+        src="../assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+        alt="beaux plats"
+      />
+      <div class="menu">
+        <div class="nomEtCoeur">
+          <h2 class="title">La palette du goût</h2>
+          <div class="hearts">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-heart full-heart"></i>
+          </div>
+        </div>
+        <!--         ENTREES -->
+        <div class="containerMenus">
+          <h3>ENTRÉES</h3>
+          <div class="underline"></div>
+
+          <div class="containerDish">
+            <div class="card">
+              <div class="description">
+                <h4>Fricassée d'escargots</h4>
+                <div class="detailPrix">
+                  <p>Au piment d'Espelette</p>
+                  <div class="prix">25€</div>
+                </div>
+              </div>
+              <div class="chosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="description">
+                <h4>Foie gras de canard mi-cuit</h4>
+                <div class="detailPrix">
+                  <p>Et ses copeaux de truffe noire</p>
+                  <div class="prix">35€</div>
+                </div>
+              </div>
+              <div class="chosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="description">
+                <h4>Oeuf au plat</h4>
+                <div class="detailPrix">
+                  <p>Assaisonné à la truffe sur lit de verdure</p>
+                  <div class="prix">20€</div>
+                </div>
+              </div>
+              <div class="chosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PLATS -->
+        <div class="containerMenus">
+          <h3>PLATS</h3>
+          <div class="underline"></div>
+
+          <div class="containerDish">
+            <div class="card">
+              <div class="description">
+                <h4>Filet de boeuf aux herbes</h4>
+                <div class="detailPrix">
+                  <p>Accompagnées de sa ribambelle de légumes</p>
+                  <div class="prix">40€</div>
+                </div>
+              </div>
+              <div class="chosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="description">
+                <h4>Parmentier de queue de boeuf</h4>
+                <div class="detailPrix">
+                  <p>À la truffe noire sur sa purée de panais</p>
+                  <div class="prix">35€</div>
+                </div>
+              </div>
+              <div class="chosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="description">
+                <h4>Filet de turbot</h4>
+                <div class="detailPrix">
+                  <p>Aux agrumes</p>
+                  <div class="prix">44€</div>
+                </div>
+              </div>
+              <div class="chosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- DESSERTS -->
+        <div class="containerMenus">
+          <h3>DESSERTS</h3>
+          <div class="underline"></div>
+
+          <div class="containerDish">
+            <div class="card">
+              <div class="description">
+                <h4>Paris-Brest</h4>
+                <div class="detailPrix">
+                  <p>Revisité</p>
+                  <div class="prix">18€</div>
+                </div>
+              </div>
+              <div class="chosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="description">
+                <h4>Macaron au chocolat d'exception</h4>
+                <div class="detailPrix">
+                  <p>Et glace à la vanille de Madagascar</p>
+                  <div class="prix">22€</div>
+                </div>
+              </div>
+              <div class="chosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="description">
+                <h4>Mousse au chocolat</h4>
+                <div class="detailPrix">
+                  <p>Au piment d'Espelette et à la truffe noire</p>
+                  <div class="prix">23€</div>
+                </div>
+              </div>
+              <div class="chosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="bigBtn">Commander</button>
+      </div>
+    </main>
+    <div class="loaderContainer">
+      <div class="loader"></div>
+    </div>
+    <!--     FOOTER -->
+    <footer>
+      <h3 class="logo">ohmyfood</h3>
+      <nav>
+        <ul>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-utensils" style="color: #ffffff"></i>
+              Porposer un restaurant</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i
+                class="fa-solid fa-handshake-angle"
+                style="color: #ffffff"
+              ></i>
+              Devenir partenaire</a
+            >
+          </li>
+          <li><a href="">Mention légales</a></li>
+          <li><a href="mailto:ohmyfood@gmail.com">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>

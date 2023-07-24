@@ -28,9 +28,6 @@ i {
   display: none;
 }
 
-/* .empty-heart {
-    background-image: url("../assets/logos/emptyHeart.png");
-} */
 .bigBtn {
   min-width: 200px;
   color: white;
@@ -147,4 +144,10 @@ i {
 }
 .menu .card:nth-child(3) {
   animation-delay: 2.2s;
+}
+.menu .card:nth-child(4) {
+  animation-delay: 2.9s;
+}
+.menu .card:nth-child(5) {
+  animation-delay: 3.6s;
 }
