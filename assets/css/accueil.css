@@ -104,7 +104,8 @@ header .localisation {
 .fonctionnement .cardContainer .stepCard {
   display: flex;
   align-items: center;
-  max-width: 390px;
+  width: 85%;
+  max-width: 400px;
   height: 3em;
   margin: 12px auto auto 21px;
   padding: 13px 0;
@@ -134,21 +135,32 @@ header .localisation {
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
+.restaurants .card .nomEtLocalisation * {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .restaurants .card .bottomCard {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 10px 15px;
 }
-.restaurants .card .bottomCard .nouveau {
+.restaurants .card .nouveauContainer {
+  width: 0;
+  height: 0;
+  margin-left: 70%;
+}
+.restaurants .card .nouveau {
+  width: 58px;
   font-weight: 500;
   font-size: 15px;
   padding: 5px 12px;
   color: #008766;
   background-color: #99E2D0;
   position: relative;
-  bottom: 200px;
-  left: 60px;
+  bottom: 245px;
+  right: -70%;
   border-radius: 2px;
 }
 
@@ -164,6 +176,9 @@ header .localisation {
   .fonctionnement .cardContainer {
     display: flex;
     margin-left: 15px;
+  }
+  .fonctionnement .stepCard {
+    width: auto;
   }
   .restaurants {
     display: flex;
@@ -189,8 +204,9 @@ header .localisation {
     justify-content: center;
   }
   .fonctionnement .cardContainer .stepCard {
-    min-width: 280px;
     padding-right: 40px;
     margin: 15px;
+    min-width: 250px;
+    max-width: 350px;
   }
 }

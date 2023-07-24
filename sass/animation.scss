@@ -51,6 +51,7 @@ version codepen :
 // HEART QUI SE REMPLIT
 
 .full-heart {
+    display: none; 
     color: white;
     position: relative;
     left: -34px;
@@ -62,6 +63,8 @@ version codepen :
 }
 .hearts:hover {
     .full-heart {
+        display:inline-block;
+        left: 0;
         opacity: 1;
         // Pour que la couleur de l'icon soit en linear-gradient:
     /*     background: -moz-linear-gradient(top, $color-purple 0%, $color-pink 100%);
@@ -73,6 +76,7 @@ version codepen :
         -webkit-text-fill-color: transparent;
     }
     .fa-regular {
+        display: none; 
        opacity: 0;
     }
 }

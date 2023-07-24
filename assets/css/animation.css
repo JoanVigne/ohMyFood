@@ -100,6 +100,7 @@ i {
   }
 }
 .full-heart {
+  display: none;
   color: white;
   position: relative;
   left: -34px;
@@ -112,6 +113,8 @@ i {
 }
 
 .hearts:hover .full-heart {
+  display: inline-block;
+  left: 0;
   opacity: 1;
   /*     background: -moz-linear-gradient(top, $color-purple 0%, $color-pink 100%);
       background: -webkit-linear-gradient(top, $color-purple 0%, $color-pink 100%); */
@@ -122,5 +125,6 @@ i {
   -webkit-text-fill-color: transparent;
 }
 .hearts:hover .fa-regular {
+  display: none;
   opacity: 0;
 }

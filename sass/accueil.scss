@@ -62,8 +62,8 @@ header {
         .stepCard{
             display: flex;
             align-items: center;
-
-            max-width: 390px;
+            width: 85%;
+            max-width: 400px;
             height: 3em;
             margin: 12px auto auto 21px;
             padding: 13px 0;
@@ -99,22 +99,34 @@ header {
             border-radius: 20px 20px 0 0;
             object-fit: cover;
         }
+        .nomEtLocalisation *{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
         .bottomCard {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin: 10px 15px;
-            .nouveau {
-                font-weight: 500;
-                font-size: 15px;
-                padding: 5px 12px;
-                color: $color-green;
-                background-color: $color-validated;
-                position: relative;
-                bottom: 200px ;
-                left: 60px;
-                @include radius(2px);
-            }
+           
+        }
+        .nouveauContainer {
+            width: 0;
+            height: 0;
+            margin-left: 70%;
+        }
+        .nouveau {
+            width: 58px;
+            font-weight: 500;
+            font-size: 15px;
+            padding: 5px 12px;
+            color: $color-green;
+            background-color: $color-validated;
+            position: relative;
+            bottom: 245px;
+            right: -70%;
+            @include radius(2px);
         }
 
 
@@ -136,6 +148,9 @@ header {
         .cardContainer {
             display: flex;
             margin-left: 15px;
+        }
+        .stepCard {
+            width:auto;
         }
     }
     .restaurants {
@@ -162,9 +177,10 @@ header {
     .cardContainer {
         justify-content: center;
         .stepCard {
-        min-width: 280px;
         padding-right: 40px;
         margin: 15px;
+        min-width: 250px;
+        max-width: 350px;
         }
     }
 }
