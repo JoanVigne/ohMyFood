@@ -125,7 +125,6 @@ header {
             background-color: $color-validated;
             position: relative;
             bottom: 245px;
-            right: -70%;
             @include radius(2px);
         }
 
@@ -147,7 +146,6 @@ header {
         align-items: baseline;
         .cardContainer {
             display: flex;
-            margin-left: 15px;
         }
         .stepCard {
             width:auto;
@@ -175,12 +173,20 @@ header {
 .fonctionnement {
     margin-left: 6%;
     .cardContainer {
-        justify-content: center;
+        width: 100%;
         .stepCard {
         padding-right: 40px;
         margin: 15px;
         min-width: 250px;
         max-width: 350px;
+        }
+    }
+}
+.restaurants 
+{
+    .card {
+        .nouveauContainer {
+            margin-left: 75%;
         }
     }
 }

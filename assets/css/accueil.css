@@ -160,7 +160,6 @@ header .localisation {
   background-color: #99E2D0;
   position: relative;
   bottom: 245px;
-  right: -70%;
   border-radius: 2px;
 }
 
@@ -175,7 +174,6 @@ header .localisation {
   }
   .fonctionnement .cardContainer {
     display: flex;
-    margin-left: 15px;
   }
   .fonctionnement .stepCard {
     width: auto;
@@ -201,12 +199,15 @@ header .localisation {
     margin-left: 6%;
   }
   .fonctionnement .cardContainer {
-    justify-content: center;
+    width: 100%;
   }
   .fonctionnement .cardContainer .stepCard {
     padding-right: 40px;
     margin: 15px;
     min-width: 250px;
     max-width: 350px;
+  }
+  .restaurants .card .nouveauContainer {
+    margin-left: 75%;
   }
 }

@@ -5,7 +5,7 @@
 
 
 .loader {
-    position: absolute;
+    position:absolute;
     top: 35%;
     left: 50%;
     margin-left: -2em; /* la moitié de la taille de l'element pour parfaitement moitié*/
@@ -14,8 +14,8 @@
     opacity: 0;
     background-color:rgba($color: white, $alpha: 0.1);
 
-    border-top: .3em solid $color-validated;
-	border-right: .3em solid transparent;
+    border-top: .4em solid $color-purple;
+	border-right: .4em solid transparent;
 	animation: loader 1s linear infinite;
     animation-iteration-count: 3; /* pour qu'il s'arrete au bout de 3 tours */
 	border-radius: 100%;
@@ -81,3 +81,28 @@ version codepen :
     }
 }
 
+// CARD UNE PAR UNE
+
+@keyframes appearing {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.menu {
+ .card {
+    animation: appearing 2s ease-in forwards;
+    opacity: 0;
+    &:first-child {      
+        animation-delay: 0.8s;
+    }
+    &:nth-child(2){
+        animation-delay: 1.5s;
+    }
+    &:nth-child(3){
+        animation-delay: 2.2s;
+    }
+} 
+}

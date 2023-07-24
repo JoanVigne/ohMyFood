@@ -90,7 +90,7 @@ header .logo {
   position: relative;
   top: -40px;
   border-radius: 40px 40px 0 0;
-  padding: 10px;
+  padding: 0 10px;
 }
 .menu .nomEtCoeur {
   display: flex;
@@ -102,7 +102,7 @@ header .logo {
   font-size: 28px;
   font-weight: unset;
 }
-.menu .nomEtCoeur .fa-regular {
+.menu .nomEtCoeur .hearts {
   padding-left: 25px;
 }
 .menu .containerMenus {
@@ -118,11 +118,10 @@ header .logo {
 .menu .containerMenus .containerDish {
   display: flex;
   flex-direction: column;
-  /*        align-items: center; */
 }
 .menu .containerMenus .containerDish .card {
   background-color: white;
-  max-width: 600px;
+  max-width: 500px;
   border-radius: 15px;
   filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.2));
   margin-top: 15px;
@@ -132,9 +131,10 @@ header .logo {
 .menu .containerMenus .containerDish .card .description {
   padding: 12px;
   flex: 1;
-  max-width: 65%;
+  width: 75%;
 }
-.menu .containerMenus .containerDish .card .description h4, .menu .containerMenus .containerDish .card .description p {
+.menu .containerMenus .containerDish .card .description h4,
+.menu .containerMenus .containerDish .card .description p {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -144,35 +144,33 @@ header .logo {
   padding: 3px 0;
   font-size: 18px;
 }
-.menu .containerMenus .containerDish .card .container {
+.menu .containerMenus .containerDish .card .description .detailPrix {
   display: flex;
-  align-items: flex-end;
+  justify-content: space-between;
 }
-.menu .containerMenus .containerDish .card .container .prix {
+.menu .containerMenus .containerDish .card .description .detailPrix .prix {
   font-weight: bold;
-  margin: 10px;
 }
-.menu .containerMenus .containerDish .card .container .chosen {
+.menu .containerMenus .containerDish .card .chosen {
   display: flex;
   color: white;
   background-color: #99E2D0;
-  height: 100%;
   border-radius: 0 15px 15px 0;
   width: 0;
   visibility: hidden;
   transition: all 1s;
 }
-.menu .containerMenus .containerDish .card .container .chosen i {
+.menu .containerMenus .containerDish .card .chosen i {
   margin: auto;
   font-size: 0;
   transition: all 1s;
 }
-.menu .containerMenus .containerDish .card .container .chosen:active, .menu .containerMenus .containerDish .card .container .chosen:hover {
+.menu .containerMenus .containerDish .card .chosen:active, .menu .containerMenus .containerDish .card .chosen:hover {
   visibility: hidden;
   width: 0;
   transition: all 1s;
 }
-.menu .containerMenus .containerDish .card .container .chosen:active i, .menu .containerMenus .containerDish .card .container .chosen:hover i {
+.menu .containerMenus .containerDish .card .chosen:active i, .menu .containerMenus .containerDish .card .chosen:hover i {
   font-size: 0;
 }
 .menu .containerMenus .containerDish .card:hover .chosen {
@@ -193,9 +191,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .menu {
-    margin: 0 10%;
-  }
   .menu .nomEtCoeur {
     justify-content: center;
   }
@@ -205,5 +200,10 @@ footer {
   .menu .containerMenus .containerDish {
     display: flex;
     flex-direction: column;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .menu {
+    margin: 0 10%;
   }
 }

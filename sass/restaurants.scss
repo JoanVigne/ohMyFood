@@ -1,172 +1,166 @@
-@import 'style.scss';
+@import "style.scss";
 
 body {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 header {
-    display: flex;
-    align-items: center;
-    font-weight: 400;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
 
-    i {
-        font-size: x-large;
-        padding: 20px;
-    }
-    .logo {
-        position: absolute;
-        left: 50%;
-        margin-left: -90px; 
-        width: 180px;
-    }
+  i {
+    font-size: x-large;
+    padding: 20px;
+  }
+  .logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+  }
 }
 
 .photoResto {
-    width: 100%;
-/*     z-index: -1; */
-    max-height: 400px;
-    object-fit: cover;
+  width: 100%;
+  /*     z-index: -1; */
+  max-height: 400px;
+  object-fit: cover;
 }
 
 .menu {
+  z-index: 1;
+  background-color: $bg-color-light-grey;
+  position: relative;
+  top: -40px;
+  border-radius: 40px 40px 0 0;
 
-    z-index: 1;
-    background-color: $bg-color-light-grey;
-    position: relative;
-    top: -40px;
-    border-radius: 40px 40px 0 0;   
+  padding:0 10px;
 
-    padding: 10px;
+  .nomEtCoeur {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 15px;
+    .title {
+      font-size: 28px;
+      font-weight: unset;
+    }
+    .hearts {
+      padding-left: 25px;
+    }
+  }
+  .containerMenus {
+    margin-bottom: 50px;
+    h3 {
+      font-weight: 400;
+    }
+    .underline {
+      border: 2px solid $color-validated;
+      width: 50px;
+    }
 
-    .nomEtCoeur {
+    .containerDish {
+      display: flex;
+      flex-direction: column;      
+      .card {
+        // animation in animation.scss
+        background-color: $color-white;
+        max-width: 500px;
+        @include radius(15px);
+        @include boxShadow;
+        margin-top: 15px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        padding: 35px 15px;
-        .title {
-            font-size: 28px;
-            font-weight: unset;    
-        }
-        .fa-regular {
-            padding-left: 25px;
-        }
 
-    }
-    .containerMenus {
-        margin-bottom: 50px;
-        h3 {
-            font-weight: 400;
-        }
-        .underline {
-            border: 2px solid $color-validated;
-            width: 50px;
-        }
-
-        .containerDish {
+        .description {
+          padding: 12px;
+          flex: 1;
+          width: 75%;
+          h4,
+          p {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+          }
+          h4 {
+            padding: 3px 0;
+            font-size: 18px;
+          }
+          .detailPrix {
             display: flex;
-            flex-direction: column;
-     /*        align-items: center; */
-            .card {
-                background-color: $color-white;
-                max-width: 600px;
-                @include radius(15px);
-                @include boxShadow;
-                margin-top: 15px ;
-                display: flex;
-                justify-content: space-between;
-                
-                    .description {
-                        padding: 12px;
-                        flex: 1;
-                        max-width: 65%;
-                        h4, p {
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        width: 100%;
-                    }
-                        h4 {
-                            padding: 3px 0;
-                            font-size: 18px; 
-                        }
-                    }
-                    .container {
-                        display: flex;
-                        align-items: flex-end;
-    
-                        .prix {    
-                            font-weight: bold;
-                            margin: 10px;
-                        }
-                            .chosen {
-                                display: flex;
-                                color: white;
-                                background-color: $color-validated;
-                                height: 100%;
-                                border-radius: 0 15px 15px 0;
-                                width:  0;
-                                visibility: hidden;
-                                transition: all 1s;
-                                i {
-                                    margin: auto;
-                                    font-size: 0;
-                                    transition: all 1s;
-                                }
-                                // en phone, quand chosen est visible, pour le remettre en invisible
-                                &:active, &:hover {
-                                    visibility: hidden;
-                                    width: 0;
-                                    i {
-                                      font-size: 0;
-                                    }
-                                    transition: all 1s;
-                                  }
-                            }
-                }
-
-
-            // quand chosen invisible, onclick sur phone, et hover en desktop     
-            &:hover .chosen{
-                visibility: visible;
-                width: 65px;
-                i {
-                    margin: auto;
-                    font-size: 20px;
-                }
-            }  
-            }
+            justify-content: space-between;
+            .prix {
+                font-weight: bold;
+               
+              }
+          }
         }
+        .chosen {
+          display: flex;
+          color: white;
+          background-color: $color-validated;
+          border-radius: 0 15px 15px 0;
+          width: 0;
+          visibility: hidden;
+          transition: all 1s;
+          i {
+            margin: auto;
+            font-size: 0;
+            transition: all 1s;
+          }
+          // en phone, quand chosen est visible, pour le remettre en invisible
+          &:active,
+          &:hover {
+            visibility: hidden;
+            width: 0;
+            i {
+              font-size: 0;
+            }
+            transition: all 1s;
+          }
+        }
+
+        // quand chosen invisible, onclick sur phone, et hover en desktop
+        &:hover .chosen {
+          visibility: visible;
+          width: 65px;
+          i {
+            margin: auto;
+            font-size: 20px;
+          }
+        }
+      }
     }
-    .bigBtn {
-        margin-left: calc(50% - $min-width-btn/2);
-    }
+  }
+  .bigBtn {
+    margin-left: calc(50% - $min-width-btn/2);
+  }
 }
 
 footer {
-    position: relative;
-    top: -40px;
+  position: relative;
+  top: -40px;
 }
 
 @media (min-width: 768px) {
-    .menu {
-        margin: 0 10%;
-        .nomEtCoeur {
-            justify-content: center;
-
-        }
-        .containerMenus {
-            margin: 0 20% 40px 20%;
-            .containerDish {
-               display: flex;
-                flex-direction: column;               
-            }
-        }
+  .menu {
+    .nomEtCoeur {
+      justify-content: center;
     }
-
+    .containerMenus {
+      margin: 0 20% 40px 20%;
+      .containerDish {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
 }
 @media only screen and (min-width: 1024px) {
-    
-    
+    .menu {
+        margin: 0 10%;
     }
-
+}
