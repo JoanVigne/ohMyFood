@@ -1,9 +1,6 @@
 @import 'style.scss';
 
 
-// faire des mixins pour les importer partout
-
-
 .loader {
     position:absolute;
     top: 35%;
@@ -21,11 +18,6 @@
 	border-radius: 100%;
 }
 @keyframes loader {
-/*  
-version codepen :
-    to {
-        transform: rotate(360deg)
-    } */
     0% {
         transform: rotate(0deg);
         opacity: 0.3;
@@ -66,9 +58,6 @@ version codepen :
         display:inline-block;
         left: 0;
         opacity: 1;
-        // Pour que la couleur de l'icon soit en linear-gradient:
-    /*     background: -moz-linear-gradient(top, $color-purple 0%, $color-pink 100%);
-        background: -webkit-linear-gradient(top, $color-purple 0%, $color-pink 100%); */
         background: linear-gradient(to bottom, $color-purple 0%, $color-pink 100%);
         -webkit-background-clip: text;
         -moz-background-clip: text;

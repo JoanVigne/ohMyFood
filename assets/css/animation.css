@@ -48,9 +48,6 @@ i {
   filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.5));
 }
 
-/* .fa-solid {
-
-} */
 .loader {
   position: absolute;
   top: 35%;
@@ -68,11 +65,6 @@ i {
 }
 
 @keyframes loader {
-  /*  
-  version codepen :
-      to {
-          transform: rotate(360deg)
-      } */
   0% {
     transform: rotate(0deg);
     opacity: 0.3;
@@ -111,8 +103,6 @@ i {
   display: inline-block;
   left: 0;
   opacity: 1;
-  /*     background: -moz-linear-gradient(top, $color-purple 0%, $color-pink 100%);
-      background: -webkit-linear-gradient(top, $color-purple 0%, $color-pink 100%); */
   background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
