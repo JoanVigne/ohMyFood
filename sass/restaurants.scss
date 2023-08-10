@@ -101,21 +101,20 @@ header {
         }
         .chosen {
           display: flex;
+          align-items: center;
+          justify-content: center;
           color: white;
           background-color: $color-validated;
           border-radius: 0 15px 15px 0;
           width: 0;
-          visibility: hidden;
           transition: all 1s;
           i {
-            margin: auto;
             font-size: 0;
             transition: all 1s;
           }
           // en phone, quand chosen est visible, pour le remettre en invisible
           &:active,
           &:hover {
-            visibility: hidden;
             width: 0;
             i {
               font-size: 0;
@@ -129,7 +128,6 @@ header {
           visibility: visible;
           width: 65px;
           i {
-            margin: auto;
             font-size: 20px;
           }
         }

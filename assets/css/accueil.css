@@ -131,6 +131,7 @@ header .localisation {
   padding: 20px 0 5px 20px;
 }
 .restaurants .card {
+  position: relative;
   margin: 20px 15px auto;
   padding-bottom: 10px;
   background-color: white;
@@ -153,11 +154,6 @@ header .localisation {
   justify-content: space-between;
   margin: 10px 15px;
 }
-.restaurants .card .nouveauContainer {
-  width: 0;
-  height: 0;
-  margin-left: 70%;
-}
 .restaurants .card .nouveau {
   width: 58px;
   font-weight: 500;
@@ -165,8 +161,9 @@ header .localisation {
   padding: 5px 12px;
   color: #008766;
   background-color: #99E2D0;
-  position: relative;
-  bottom: 245px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
   border-radius: 2px;
 }
 
