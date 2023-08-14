@@ -65,7 +65,7 @@ header {
       display: flex;
       flex-direction: column;      
       .card {
-        // animation in animation.scss
+        // animation apparition un par un in animation.scss
         background-color: $color-white;
         max-width: 500px;
         @include radius(15px);
@@ -80,6 +80,7 @@ header {
           width: 75%;
           h4,
           p {
+            // OVERFLOW DES DESCRIPTIONS ET DES INTITULES
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
@@ -98,6 +99,7 @@ header {
               }
           }
         }
+        // CHOIX DES PLATS
         .chosen {
           display: flex;
           align-items: center;
@@ -146,7 +148,13 @@ footer {
 @media (min-width: 768px) {
   .menu {
     .nomEtCoeur {
+      position: relative;
       justify-content: center;
+      .hearts{
+        position: inherit;
+        margin-left: 30px;
+        margin-bottom: 32px;
+      }
     }
     .containerMenus {
       margin: 0 20% 40px 20%;

@@ -87,31 +87,33 @@ i {
   }
 }
 .full-heart {
-  display: none;
-  color: white;
-  position: relative;
-  left: -34px;
-  opacity: 0;
-  transition: all 1s;
-}
-
-.fa-regular {
-  transition: all 1s;
-}
-
-.hearts:hover .full-heart {
-  display: inline-block;
-  left: 0;
-  opacity: 1;
+  color: transparent;
   background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+  position: absolute;
+  right: 10px;
+  opacity: 0;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: opacity 0.3s;
+}
+
+.fa-regular {
+  opacity: 1;
+  transition: opacity 3s;
+  position: absolute;
+  right: 10px;
+}
+
+.hearts:hover .full-heart {
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 .hearts:hover .fa-regular {
   display: none;
   opacity: 0;
+  transition: 2s;
 }
 
 @keyframes appearing {

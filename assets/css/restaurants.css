@@ -182,7 +182,13 @@ footer {
 
 @media (min-width: 768px) {
   .menu .nomEtCoeur {
+    position: relative;
     justify-content: center;
+  }
+  .menu .nomEtCoeur .hearts {
+    position: inherit;
+    margin-left: 30px;
+    margin-bottom: 32px;
   }
   .menu .containerMenus {
     margin: 0 20% 40px 20%;

@@ -4,7 +4,7 @@
   "description": "ohMyFood",
   "main": "index.js",
   "scripts": {
-     "sass": "sass --no-source-map --watch ./sass:./assets/css"   
+    "sass": "sass --no-source-map --watch ./sass:./assets/css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JoanVigne/ohMyFood/issues"
   },
-  "homepage": "https://github.com/JoanVigne/ohMyFood#readme"
+  "homepage": "https://github.com/JoanVigne/ohMyFood#readme",
+  "dependencies": {
+    "sass": "^1.65.1"
+  }
 }
